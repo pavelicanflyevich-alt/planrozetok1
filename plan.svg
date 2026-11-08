@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-500 -400 11200 12800" font-family="Arial, sans-serif">
+  <defs>
+    <style>
+      .wall-outer { stroke: #1a1a1a; stroke-width: 200; stroke-linecap: square; fill: none; }
+      .wall-inner { stroke: #555; stroke-width: 150; stroke-linecap: square; fill: none; }
+      .room-label { font-size: 280px; fill: #b0b0b0; text-anchor: middle; font-weight: 600; }
+      .dim-line { stroke: #4fc3f7; stroke-width: 20; fill: none; }
+      .dim-text { font-size: 200px; fill: #4fc3f7; text-anchor: middle; font-weight: bold; }
+      .outlet-circle { stroke: white; stroke-width: 25; }
+      .outlet-letter { font-size: 130px; fill: white; text-anchor: middle; font-weight: bold; }
+      .outlet-h { font-size: 100px; fill: #777; text-anchor: middle; }
+      .legend-title { font-size: 200px; fill: #333; font-weight: bold; }
+      .legend-text { font-size: 150px; fill: #333; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="8760" height="11420" fill="#f5f5f5"/>
+  <rect x="0" y="0" width="8760" height="11420" class="wall-outer"/>
+
+  <line x1="3100" y1="100" x2="3100" y2="5600" class="wall-inner"/>
+  <line x1="6260" y1="100" x2="6260" y2="5600" class="wall-inner"/>
+  <line x1="100" y1="5700" x2="8660" y2="5700" class="wall-inner"/>
+  <line x1="2450" y1="5800" x2="2450" y2="11320" class="wall-inner"/>
+  <line x1="3100" y1="5800" x2="3100" y2="11320" class="wall-inner"/>
+
+  <text x="1550" y="2900" class="room-label">Спальня 1</text>
+  <text x="4680" y="2900" class="room-label">Спальня 2</text>
+  <text x="7510" y="2900" class="room-label">Кухня</text>
+  <text x="1225" y="8800" class="room-label">Санузел</text>
+  <text x="5930" y="8800" class="room-label">Гостиная</text>
+
+  <line x1="0" y1="-200" x2="8760" y2="-200" class="dim-line"/>
+  <line x1="0" y1="-250" x2="0" y2="-150" class="dim-line"/>
+  <line x1="2460" y1="-250" x2="2460" y2="-150" class="dim-line"/>
+  <line x1="3100" y1="-250" x2="3100" y2="-150" class="dim-line"/>
+  <line x1="6260" y1="-250" x2="6260" y2="-150" class="dim-line"/>
+  <line x1="8760" y1="-250" x2="8760" y2="-150" class="dim-line"/>
+  <text x="1230" y="-260" class="dim-text">2460</text>
+  <text x="2780" y="-260" class="dim-text">640</text>
+  <text x="4680" y="-260" class="dim-text">3160</text>
+  <text x="7510" y="-260" class="dim-text">2500</text>
+
+  <!-- Спальня 1 -->
+  <g transform="translate(700,300)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=65</text></g>
+  <g transform="translate(1600,300)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=65</text></g>
+  <g transform="translate(2900,2200)"><circle r="140" fill="#9b59b6" class="outlet-circle"/><text y="45" class="outlet-letter">U</text><text y="300" class="outlet-h">h=75</text></g>
+  <g transform="translate(2900,1000)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=120</text></g>
+  <g transform="translate(300,4500)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=30</text></g>
+
+  <!-- Спальня 2 -->
+  <g transform="translate(3800,300)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=65</text></g>
+  <g transform="translate(4900,300)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=65</text></g>
+  <g transform="translate(6050,2200)"><circle r="140" fill="#9b59b6" class="outlet-circle"/><text y="45" class="outlet-letter">U</text><text y="300" class="outlet-h">h=75</text></g>
+  <g transform="translate(4000,5400)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=30</text></g>
+
+  <!-- Кухня -->
+  <g transform="translate(6800,300)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=110</text></g>
+  <g transform="translate(7300,300)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=110</text></g>
+  <g transform="translate(7800,300)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=110</text></g>
+  <g transform="translate(8300,300)"><circle r="140" fill="#9b59b6" class="outlet-circle"/><text y="45" class="outlet-letter">U</text><text y="300" class="outlet-h">h=110</text></g>
+  <g transform="translate(6600,700)"><circle r="140" fill="#f39c12" class="outlet-circle"/><text y="45" class="outlet-letter">P</text><text y="300" class="outlet-h">h=15</text></g>
+  <g transform="translate(8500,3200)"><circle r="140" fill="#f39c12" class="outlet-circle"/><text y="45" class="outlet-letter">P</text><text y="300" class="outlet-h">h=15</text></g>
+  <g transform="translate(8500,4500)"><circle r="140" fill="#f39c12" class="outlet-circle"/><text y="45" class="outlet-letter">P</text><text y="300" class="outlet-h">h=15</text></g>
+  <g transform="translate(7200,5400)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=30</text></g>
+
+  <!-- Гостиная -->
+  <g transform="translate(3500,5900)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=120</text></g>
+  <g transform="translate(4100,5900)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=120</text></g>
+  <g transform="translate(3800,6350)"><circle r="140" fill="#3498db" class="outlet-circle"/><text y="45" class="outlet-letter">I</text><text y="300" class="outlet-h">h=120</text></g>
+  <g transform="translate(3500,9000)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=30</text></g>
+  <g transform="translate(3500,10000)"><circle r="140" fill="#9b59b6" class="outlet-circle"/><text y="45" class="outlet-letter">U</text><text y="300" class="outlet-h">h=30</text></g>
+  <g transform="translate(8500,8500)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=30</text></g>
+  <g transform="translate(6000,11100)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=30</text></g>
+
+  <!-- Санузел -->
+  <g transform="translate(400,6000)"><circle r="140" fill="#1abc9c" class="outlet-circle"/><text y="45" font-size="100" class="outlet-letter">IP</text><text y="300" class="outlet-h">h=110</text></g>
+  <g transform="translate(400,10800)"><circle r="140" fill="#1abc9c" class="outlet-circle"/><text y="45" font-size="100" class="outlet-letter">IP</text><text y="300" class="outlet-h">h=90</text></g>
+  <g transform="translate(2100,7000)"><circle r="140" fill="#1abc9c" class="outlet-circle"/><text y="45" font-size="100" class="outlet-letter">IP</text><text y="300" class="outlet-h">h=90</text></g>
+
+  <!-- Коридор -->
+  <g transform="translate(2750,10800)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=30</text></g>
+  <g transform="translate(2750,8000)"><circle r="140" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text y="300" class="outlet-h">h=30</text></g>
+
+  <!-- Легенда -->
+  <g transform="translate(9200, 400)">
+    <text x="0" y="0" class="legend-title">Легенда</text>
+    <g transform="translate(0, 400)"><circle r="110" fill="#e74c3c" class="outlet-circle"/><text y="45" class="outlet-letter">S</text><text x="180" y="50" class="legend-text">Schuko</text></g>
+    <g transform="translate(0, 750)"><circle r="110" fill="#9b59b6" class="outlet-circle"/><text y="45" class="outlet-letter">U</text><text x="180" y="50" class="legend-text">Schuko+USB</text></g>
+    <g transform="translate(0, 1100)"><circle r="110" fill="#3498db" class="outlet-circle"/><text y="45" class="outlet-letter">I</text><text x="180" y="50" class="legend-text">RJ45</text></g>
+    <g transform="translate(0, 1450)"><circle r="110" fill="#f39c12" class="outlet-circle"/><text y="45" class="outlet-letter">P</text><text x="180" y="50" class="legend-text">Силовая</text></g>
+    <g transform="translate(0, 1800)"><circle r="110" fill="#1abc9c" class="outlet-circle"/><text y="45" font-size="100" class="outlet-letter">IP</text><text x="180" y="50" class="legend-text">IP44</text></g>
+    <text x="0" y="2150" font-size="130" fill="#666">Высота h — от чистового пола, см</text>
+  </g>
+</svg>
